@@ -1,0 +1,69 @@
+'''week 4'''
+#largest even number and largest odd number in list
+'''
+list1=[4,7,8,1,9,14,17,2,3]
+list1.sort()
+for i in list1:
+ if (i%2==0):
+ c=i
+ else:
+ d=i
+print(c)
+print(d)
+'''
+#return length of longest word in list
+'''
+l=["vamsi","jagadeesh","sandeep"]
+l.sort(key=len)
+print(l[-1])
+'''
+#swap the first and last values of list
+'''
+s=[23,43,56,34,56]
+s[0],s[-1]=s[-1],s[0]
+print(s)
+'''
+#print element that occurs odd number of times in list
+'''
+li=[2,4,65,45,23,1,2,45,23]
+for i in li:
+ d=li.count(i)
+ if d%2!=0:
+ print(i)
+'''
+#number of vowels in given list of strings
+'''
+lis=["sandeep","jagadeesh","vamsi"]
+c=0
+for i in lis:
+ for j in i:
+ if(j=='a' or j=='e' or j=='i' or j=='o' or j=='u'):
+ c=c+1
+print("number of vowels in list: ",c)
+'''
+#sorting list based on length
+'''
+li=["apple","pineapple","banana","coconut"]
+li.sort(key=len)
+print(li)
+'''
+#file names with .exe extensions
+'''
+lis=["acds.txt","sdef.exe","fdfws.csv","asdf.exe"]
+sub='.exe'
+for i in lis:
+ if sub in i:
+ print(i)
+'''
+#frequency of letters in given list of strings
+'''
+li=["apple","pineapple","banana","coconut"]
+a={}
+for i in li:
+ for j in i:
+ if j in a:
+ a[j]+=1
+ else:
+ a[j]=1
+print(a)
+''' 
